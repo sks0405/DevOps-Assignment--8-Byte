@@ -37,6 +37,16 @@ resource "aws_subnet" "private" {
   }
 }
 
+resource "aws_subnet" "private_2" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.3.0/24"
+  availability_zone = "ap-south-1b"
+
+  tags = {
+    Name = "${var.project_name}-private-subnet-2"
+  }
+}
+
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.main.id
 
