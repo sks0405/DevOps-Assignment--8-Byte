@@ -1,4 +1,4 @@
-DevOps Assignment - 
+# DevOps Assignment - 
 
 This project sets up a small AWS environment for running a containerized Python Flask application.
 Terraform is used to create the infrastructure and GitHub Actions is used to test, scan, build and deploy the application.
@@ -30,7 +30,7 @@ The main goal was to keep the setup simple enough to understand and maintain whi
     └── workflows/
         └── ci.yaml
 
-Application - 
+# Application - 
 
 The application is a small Flask service running on port `8080`.
 It provides two endpoints:
@@ -39,7 +39,7 @@ It provides two endpoints:
 
 The application is packaged as a Docker image so that the same image can be used across environments.
 
-Infrastructure - 
+# Infrastructure - 
 
 The AWS infrastructure is created using Terraform.
 
